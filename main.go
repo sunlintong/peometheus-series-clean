@@ -17,7 +17,7 @@ type Metrics struct {
 }
 
 const (
-	prometheusURL = "http://172.16.23.86:30959"
+	prometheusURL = "http://localhost:9090"
 	concurrentNum = 10 // must less than your series count
 	seriesPrefix  = "istio_agent_"
 )

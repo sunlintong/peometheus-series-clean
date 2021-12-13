@@ -4,7 +4,7 @@ To delete promethues series in batch.
 1. Change these const variables
 ```go
 const (
-	prometheusURL = "http://172.16.23.86:30959"
+	prometheusURL = "http://localhost:9090"
 	concurrentNum = 10 // must less than your series count
 	seriesPrefix  = "envoy_"
 )
