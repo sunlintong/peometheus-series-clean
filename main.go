@@ -41,6 +41,10 @@ func main() {
 		}
 	}
 
+	if len(targets) < concurrentNum {
+		log.Fatalf("concurrentNum must less than your series count: %d", len(targets))
+	}
+
 	// separate
 	sliceCap := len(targets) / (concurrentNum - 1)
 	urls := [(concurrentNum)][]string{}
